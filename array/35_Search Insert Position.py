@@ -21,9 +21,11 @@ class Solution:
         return left_pointer + 1
 
 S = Solution()
-print(S.searchInsert(nums=[1,3],target=1))
+print(S.searchInsert(nums=[1, 3], target=1))
 
 """
 2019.12.25反思：
-    总是有情况考虑不全，比如[1],1和[1,3],1一开始过不了。
+    总是有情况考虑不全。
+    1、[1],1和[1,3],1一开始过不了。加了 nums[right_pointer] == target, nums[left_pointer] == target
+    2、[1,3,5,6],0死循环。把left_pointer < right_pointer改成left_pointer < right_pointer - 1。
 """
