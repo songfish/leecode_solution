@@ -1,3 +1,4 @@
+# coding:utf-8
 # method 1
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
