@@ -2,12 +2,12 @@
 class Solution:
     def plusOne(self, digits):
         s = 0
-        l = len(digits)
-        for i in range(l):
-            s += pow(10, i) * digits[l-1-i]
+        length = len(digits)
+        for i in range(length):
+            s += pow(10, i) * digits[length-1-i]
         result = s + 1
         final_result = []
-        for j in range(l-1, -1, -1):
+        for j in range(length-1, -1, -1):
             final_result.append(result % 10)
             result = result // 10
         if set(final_result) == {0}:
