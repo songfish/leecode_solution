@@ -1,7 +1,7 @@
 # coding:utf-8
 # method 1
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums):
         # left_pointer = 0
         # right_pointer = left_pointer + 1
         length = len(nums)
